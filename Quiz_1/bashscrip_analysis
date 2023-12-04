@@ -1,0 +1,7 @@
+#!/bin/bash
+echo -n "Connection timeout" >> log_analysis.sh 
+grep -c "Connection timeout" app.log >> log_analysis.sh
+echo -n "Database connection timeout" >> log_analysis.sh 
+grep -c "Database connection failed" app.log >> log_analysis.sh
+echo -n "File not found" >> log_analysis.sh 
+grep -c "File not found" app.log >> log_analysis.sh
